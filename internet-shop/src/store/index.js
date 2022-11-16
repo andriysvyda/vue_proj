@@ -45,7 +45,10 @@ const store = createStore({
     getters: {
         getProductList: (state) => state.listData,
 
-        getProductById: (state) => (id) => id ? state.listData.find((item) => item.id == id) : {}
+        getProductById: (state) => (id) => id ? state.listData.find((item) => item.id == id) : {},
+
+        getTotalSum: (state) => (price) => price ? state.listData((item) => item.price == price) : {},
+
     },
 
     mutations: {

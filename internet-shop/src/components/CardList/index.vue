@@ -47,8 +47,14 @@
                 this.$router.push({
                 name: 'edit',
                 params: { id: itemId },
-            })
-        },
+                })
+            },
+            onAdd(itemId) {
+                this.$router.push({
+                    name: 'cart',
+                    params: {id : itemId},
+                })
+            },
     }
 }
 </script>

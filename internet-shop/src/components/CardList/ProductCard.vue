@@ -3,8 +3,8 @@
         <div class="header">
             <button @click.stop="$emit('edit-product')">Edit</button>
             <button @click.stop="$emit('delete-item')">Delete</button>
-            <button class="button" @click.stop="$emit('on-add-to-cart', price)" @mousedown.stop="">
-                <img src="https://emojigraph.org/media/twitter/white-heart_1f90d.png"/>
+            <button @click.stop="$emit('on-add-to-cart', price)">
+                Add to Cart
             </button>
         </div>
 
